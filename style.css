@@ -1,0 +1,100 @@
+* {    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(221, 250, 247);
+    display: flex;
+    margin: 10;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contact-form
+{   
+    background:white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+
+/* .full-width input, .full-width textarea {
+    width: 100%;
+    
+} */
+
+.required {
+    color: rgb(41, 86, 143);
+}
+
+input, textarea, .input-box {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+input[type="radio"], input[type="checkbox"]{
+    width: fit-content
+}
+.input-box input {
+    margin-top: 0;
+}
+
+textarea {
+    min-height: 50px;
+    resize: none;
+}
+
+.query-type {
+    margin-top: 1rem;
+}
+
+.checkbox {
+    margin-top: 1rem;
+}
+
+button {
+    background: #00695c;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+.name-fields,.query-type div {
+    display: flex;
+    gap: 20px;
+}
+
+.name-fields div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.success-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; 
+}
